@@ -1,0 +1,109 @@
+.portfolio-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #374151;
+  }
+  
+  .portfolio-container h1 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-container p {
+    color: #6b7280;
+    margin-bottom: 30px;
+  }
+  
+  /* Filtros */
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+  
+  .filters button {
+    padding: 10px 15px;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+    background: transparent;
+    color: #2563eb;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filters button.active,
+  .filters button:hover {
+    background: #2563eb;
+    color: #ffffff;
+  }
+  
+  /* Grid de Projetos */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+    text-align: left;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .project-card h3 {
+    font-size: 1.2rem;
+    color: #1f2937;
+    margin: 15px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin: 0 15px 15px 15px;
+  }
+  
+  .project-card a {
+    display: block;
+    margin: 0 15px 15px 15px;
+    padding: 10px;
+    text-align: center;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .project-card a:hover {
+    background: #1e40af;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .project-card h3 {
+      font-size: 1rem;
+    }
+  
+    .project-card p {
+      font-size: 0.9rem;
+    }
+  
+    .filters button {
+      font-size: 0.9rem;
+    }
+  }
+  

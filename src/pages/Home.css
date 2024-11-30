@@ -1,0 +1,125 @@
+/* Container principal */
+.home-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #374151;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Seção de Apresentação */
+  .intro {
+    margin-bottom: 30px;
+  }
+  
+  .intro .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .intro h1 {
+    font-size: 2rem;
+    color: #1f2937;
+  }
+  
+  .intro p {
+    color: #6b7280;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Seção de Habilidades */
+  .skills {
+    margin: 40px 0;
+  }
+  
+  .skills h2 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .skill-card .skill-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2563eb;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #374151;
+  }
+  
+  /* Seção de Chamada para Ação */
+  .cta {
+    margin-top: 40px;
+    padding: 20px;
+    background: #2563eb;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .cta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #1e40af;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #1d4ed8;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .intro h1 {
+      font-size: 1.8rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .cta h2 {
+      font-size: 1.3rem;
+    }
+  }
+  

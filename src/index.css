@@ -1,0 +1,85 @@
+/* Background geral */
+body {
+  background: linear-gradient(135deg, #f3f4f6, #151a22); /* Gradiente suave */
+  color: #333; /* Cor do texto */
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1f2937; /* Cor sólida para o cabeçalho */
+  color: #f3e9e9;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: #f9fafb;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #111827; /* Cor sólida para o rodapé */
+  color: #9ca3af;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Seções */
+section {
+  background: #ffffff; /* Fundo branco para contraste */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Links */
+a {
+  color: #2563eb; /* Azul para os links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1e40af; /* Azul mais escuro no hover */
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho do texto em telas menores */
+  }
+
+  header nav a {
+    margin: 0 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
